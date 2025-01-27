@@ -10,7 +10,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to personal-website!</title>
+        <title>Michael O’Connell - Full Stack Web Developer</title>
       </Head>
       <CssBaseline />
       <main className="app">
