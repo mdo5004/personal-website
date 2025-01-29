@@ -1,21 +1,18 @@
-import styled from '@emotion/styled';
 import {
   Avatar,
+  Box,
   Card,
   CardContent,
-  CardMedia,
   Chip,
   Link,
-  ListItem,
-  Typography,
-  Box,
-  AppBar,
-  Toolbar,
-  IconButton,
-  Button,
   List,
+  ListItem,
+  Table,
+  TableBody,
+  TableCell,
+  TableRow,
+  Typography,
 } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
 
 export function Index() {
   return (
@@ -146,12 +143,11 @@ export function Index() {
             </Typography>
             <Typography>
               I live in Center Valley, Pennsylvania with my wife, two kids, and
-              Wheaten terrier. I studied music at Penn State University before
-              switching to engineering. While working toward a PhD in chemical
+              Wheaten terrier. While working toward a PhD in chemical
               engineering at North Carolina State University, I developed a
               passion for writing code and creating delightful user interfaces
               for data analysis. I have been working as a full stack web
-              developer since I graduated from the Flatiron School's full stack
+              developer since I graduated from the Flatiron School’s full stack
               web developer program in 2017.
             </Typography>
           </CardContent>
@@ -185,6 +181,232 @@ export function Index() {
               . I’m not a big gamer, but I recently discovered the masterpiece{' '}
               <Link href="https://www.celestegame.com">Celeste</Link>.
             </Typography>
+          </CardContent>
+        </Card>
+        <Card
+          className="card"
+          sx={{
+            maxWidth: 800,
+            width: '100%',
+            margin: '0 auto',
+          }}
+        >
+          <CardContent>
+            <Typography
+              gutterBottom
+              sx={{ color: 'text.primary', fontSize: 24 }}
+            >
+              Résumé
+            </Typography>
+            <Typography
+              component={'h2'}
+              sx={{
+                fontSize: 32,
+              }}
+              gutterBottom
+            >
+              Summary
+            </Typography>
+            <Typography component={'p'} sx={{ marginBottom: 4 }}>
+              Full-Stack Web Developer with 7 years of experience in building
+              scalable, user-friendly web applications for a woman-owned,
+              women-led e-commerce company. Skilled in TypeScript, React,
+              Next.js, Storybook, Playwright and other modern web frameworks.
+              Proven ability to create pixel-perfect websites and fully-featured
+              web apps from scratch.
+            </Typography>
+            <Typography
+              component={'h2'}
+              sx={{
+                fontSize: 32,
+              }}
+              gutterBottom
+            >
+              Experience
+            </Typography>
+            <Typography sx={{ fontSize: 24, fontWeight: 500 }} component="h3">
+              Software Developer
+            </Typography>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <p>Shine Wedding Invitations</p>
+              <p>2017 – Present (7 years)</p>
+            </div>
+            <p>Rochester, NY (Remote)</p>
+            <ul>
+              <li>
+                <Link href="www.shineweddinginvitations.com">
+                  Spearheaded the multi-year transformation of a mobile-first
+                  e-commerce website{' '}
+                </Link>{' '}
+                using TypeScript, React, Next.js and other modern frameworks,
+                achieving significant improvements in branding, product
+                customization, and user experience.
+              </li>
+              <li>
+                Built thousands of pixel-perfect React components in
+                collaboration with design & product teams, adhering to
+                design-system specifications and accessibility standards.
+              </li>
+              <li>
+                Developed custom CMS and order management tools using real-time
+                databases, streamlining content management and business
+                operations.
+              </li>
+              <li>
+                Engineered a Nrwl/Nx monorepo and optimized CI/CD pipelines,
+                creating scalable infrastructure for business operations.
+              </li>
+              <li>
+                Improved site reliability with Jest unit tests, Cypress
+                integration tests, and Playwright end-to-end tests.
+              </li>
+              <li>
+                Mentored junior developers with test-driven development and code
+                reviews, fostering a culture of quality and collaboration.
+              </li>
+            </ul>
+            <Typography sx={{ fontSize: 24, fontWeight: 500 }} component="h3">
+              Graduate Research Assistant
+            </Typography>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <p>North Carolina State University</p>
+              <p>2011 – 2016</p>
+            </div>
+            <p>Raleigh, NC</p>
+            <ul>
+              <li>
+                Managed complex technical projects and collaborated with
+                interdisciplinary teams to solve ambiguous challenges.
+              </li>
+              <li>
+                Honed{' '}
+                <Link href="https://doi.org/10.1371/journal.pcbi.1004159">
+                  technical writing
+                </Link>
+                , mentoring, and problem-solving skills while presenting
+                research findings at national conferences.
+              </li>
+              <li>
+                Taught undergraduates in chemical engineering fundamentals, led
+                recitation sessions, and assisted with exam proctoring.
+              </li>
+            </ul>
+            <Typography
+              component={'h2'}
+              sx={{
+                fontSize: 32,
+                marginTop: 4,
+              }}
+              gutterBottom
+            >
+              Education
+            </Typography>
+            <ul
+              style={{
+                listStyle: 'none',
+                padding: 0,
+                margin: '1ch 0',
+              }}
+            >
+              <li style={{ marginBottom: '1ch' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                  }}
+                >
+                  <Typography sx={{ fontWeight: 500 }} component="h3">
+                    Full Stack Development
+                  </Typography>
+                  <Typography sx={{ fontWeight: 500 }}>2017</Typography>
+                </div>
+                <p>Flatiron School </p>
+                <p>New York, NY (Remote)</p>
+              </li>
+              <li style={{ marginBottom: '1ch' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                  }}
+                >
+                  <Typography sx={{ fontWeight: 500 }} component="h3">
+                    Ph.D. (ABD), Chemical Engineering
+                  </Typography>
+                  <Typography sx={{ fontWeight: 500 }}>2016</Typography>
+                </div>
+                <p>North Carolina State University</p>
+                <p>Raleigh, NC</p>
+              </li>
+              <li style={{ marginBottom: '1ch' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                  }}
+                >
+                  <Typography sx={{ fontWeight: 500 }} component="h3">
+                    M.S., Chemical Engineering
+                  </Typography>
+                  <Typography sx={{ fontWeight: 500 }}>2013</Typography>
+                </div>
+                <p>North Carolina State University</p>
+                <p>Raleigh, NC</p>
+              </li>
+              <li style={{ marginBottom: '1ch' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                  }}
+                >
+                  <Typography sx={{ fontWeight: 500 }} component="h3">
+                    B.A., Music
+                  </Typography>
+                  <Typography sx={{ fontWeight: 500 }}>2009</Typography>
+                </div>
+                <p>Pennsylvania State University</p>
+                <p>University Park, PA</p>
+              </li>
+            </ul>
+            <Typography
+              component={'h2'}
+              sx={{
+                fontSize: 32,
+                marginTop: 4,
+              }}
+              gutterBottom
+            >
+              Skills
+            </Typography>
+            <Table>
+              <TableBody>
+                <TableRow>
+                  <TableCell style={{ width: 100 }}>Front End</TableCell>
+                  <TableCell>
+                    TypeScript, React, Material UI, Next.js, CSS-in-JS, React
+                    Router, Redux
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Back End</TableCell>
+                  <TableCell>Node, Express, Firebase, NoSQL, MySQL</TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Testing</TableCell>
+                  <TableCell>
+                    Cypress, Playwright, Storybook, Jest, Mocha, Chai
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell>Other</TableCell>
+                  <TableCell>
+                    Google Cloud Platform, Bitbucket CI/CD pipelines, Nrwl/Nx
+                    monorepos, Google Analytics, SEO, Web Accessibility
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
           </CardContent>
         </Card>
       </Box>
