@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.counterWrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 48px 48px;
+}
