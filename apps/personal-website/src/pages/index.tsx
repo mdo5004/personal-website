@@ -117,19 +117,28 @@ export function Index() {
                 <Link href="https://www.shineweddinginvitations.com">
                   Shine Wedding Invitations
                 </Link>{' '}
-                <Link href="https://www.loom.com/share/cb0466d4b59a4ebeb85f5c8fc19b3d29?sid=a4a8894d-d3f8-44aa-9fa5-567554795613">
+                <Link
+                  style={{ marginLeft: '0.5ch' }}
+                  href="https://www.loom.com/share/cb0466d4b59a4ebeb85f5c8fc19b3d29?sid=a4a8894d-d3f8-44aa-9fa5-567554795613"
+                >
                   (demo)
                 </Link>
               </ListItem>
               <ListItem>
                 Shine Order Manager{' '}
-                <Link href="https://www.loom.com/share/c9f835be6dbf4e4db1e8761629afdf3b?sid=e2a2897e-7475-4e56-88a1-60d52ac02f63">
+                <Link
+                  style={{ marginLeft: '0.5ch' }}
+                  href="https://www.loom.com/share/c9f835be6dbf4e4db1e8761629afdf3b?sid=e2a2897e-7475-4e56-88a1-60d52ac02f63"
+                >
                   (demo)
                 </Link>
               </ListItem>
               <ListItem>
                 Shine CMS{' '}
-                <Link href="https://www.loom.com/share/c9f835be6dbf4e4db1e8761629afdf3b?sid=e2a2897e-7475-4e56-88a1-60d52ac02f63">
+                <Link
+                  style={{ marginLeft: '0.5ch' }}
+                  href="https://www.loom.com/share/c9f835be6dbf4e4db1e8761629afdf3b?sid=e2a2897e-7475-4e56-88a1-60d52ac02f63"
+                >
                   (demo)
                 </Link>
               </ListItem>
