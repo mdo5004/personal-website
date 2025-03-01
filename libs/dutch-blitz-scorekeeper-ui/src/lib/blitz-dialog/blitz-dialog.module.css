@@ -6,6 +6,7 @@
 
 .counterWrapper {
   margin: 0 auto;
+  width: fit-content;
   display: grid;
   grid-template-columns: 48px 48px;
 }
